@@ -25,7 +25,7 @@ public class SecondTestApproach {
 
     @Fork(value = 1)
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
+    @BenchmarkMode(Mode.Throughput)
     @Warmup(iterations = 1, time = 3, timeUnit = TimeUnit.SECONDS)
     @Measurement(iterations = 3, time = 3, timeUnit = TimeUnit.SECONDS)
     @Threads(value = Threads.MAX)
@@ -38,7 +38,7 @@ public class SecondTestApproach {
 
     @Fork(value = 1)
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
+    @BenchmarkMode(Mode.Throughput)
     @Warmup(iterations = 1, time = 3, timeUnit = TimeUnit.SECONDS)
     @Measurement(iterations = 3, time = 3, timeUnit = TimeUnit.SECONDS)
     @Threads(value = Threads.MAX)
@@ -57,7 +57,7 @@ public class SecondTestApproach {
 
     @Fork(value = 1)
     @Benchmark
-    @BenchmarkMode(Mode.AverageTime)
+    @BenchmarkMode(Mode.Throughput)
     @Warmup(iterations = 1, time = 3, timeUnit = TimeUnit.SECONDS)
     @Measurement(iterations = 3, time = 3, timeUnit = TimeUnit.SECONDS)
     @Threads(value = Threads.MAX)
