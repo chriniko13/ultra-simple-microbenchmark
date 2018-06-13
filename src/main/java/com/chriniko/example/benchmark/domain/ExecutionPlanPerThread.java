@@ -9,8 +9,11 @@ import java.util.stream.IntStream;
 @State(value = Scope.Thread)
 public class ExecutionPlanPerThread {
 
-    @Param(value = {"1000000", "1500000"})
+    @Param(value = {"500000", "1000000"})
     private int datasetSize;
+
+    @Param(value = {"111134", "468000", "10"})
+    public String key;
 
     public List<StupidHolder> dataset;
 

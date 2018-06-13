@@ -48,7 +48,7 @@ public class SecondTestApproach {
 
         int result = Collections.binarySearch(
                 executionPlan.dataset,
-                new StupidHolder("768"),
+                new StupidHolder(executionPlan.key),
                 Comparator.comparing(StupidHolder::getId)
         );
 
@@ -69,7 +69,7 @@ public class SecondTestApproach {
         }
         int result = Collections.binarySearch(
                 executionPlan.dataset,
-                new StupidHolder("768"),
+                new StupidHolder(executionPlan.key),
                 Comparator.comparing(StupidHolder::getId)
         );
 
